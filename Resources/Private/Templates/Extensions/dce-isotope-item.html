@@ -1,0 +1,26 @@
+{namespace dce=Tx_Dce_ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="col-sm-6 col-md-4 portfolio-item {field.category}">
+        <figure>
+            <div class="info">
+                <h3>{field.title}</h3>
+                <span>{field.category}</span>
+            </div>
+            <f:for each="{dce:fal(field:'field.image', contentObject:contentObject)}" as="fileReference">
+                <f:image src="{fileReference.uid}" alt="" treatIdAsReference="1" />
+            </f:for>
+            <figcaption class="">
+                <f:for each="{dce:fal(field:'field.image', contentObject:contentObject)}" as="fileReference">
+                    <a class="preview tooltips popup-gallery" title="" data-placement="bottom" data-toggle="tooltip" href="{fileReference.uid}" data-original-title="Preview">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </f:for>
+                <a class="link tooltips" title="" data-placement="bottom" data-toggle="tooltip" href="{field.link}" data-original-title="Open Website">
+                    <i class="fa fa-external-link"></i>
+                </a>
+            </figcaption>
+        </figure>
+    </div>
+</f:section>

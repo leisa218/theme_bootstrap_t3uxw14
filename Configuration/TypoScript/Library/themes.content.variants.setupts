@@ -1,0 +1,10 @@
+ lib.cssAllMap {
+  # Variants available for each element
+  variants-dark = dark
+  variants-text-center = text-center
+  variants-with-bg = with-bg
+  variants-content = content
+  variants-light = light
+  variants-vertical-align = vertical-align
+  variants-icon = icon
+}

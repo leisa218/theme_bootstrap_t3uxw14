@@ -1,0 +1,30 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap/Configuration/TypoScript/setup.txt">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_t3uxw14/Configuration/TypoScript/Library" extensions="setupts">
+
+page {
+    config{
+        no_cache= 1
+    }
+    includeCSS {
+        bootstrap = EXT:theme_bootstrap_slate/Resources/Public/Stylesheets/bootstrap.min.css
+        themet3uxw = EXT:theme_bootstrap_t3uxw14/Resources/Public/css/theme.css
+        popups = EXT:theme_bootstrap_t3uxw14/Resources/Public/css/magnific-popup.css
+        fontMonserat = http://fonts.googleapis.com/css?family=Montserrat:400,700
+        fontOpenSans = http://fonts.googleapis.com/css?family=Open+Sans:400,300,700
+        fontawesome =
+    }
+    includeJS{
+        modernizer_custom = EXT:theme_bootstrap_t3uxw14/Resources/Public/js/modernizr.custom.
+
+    }
+}
+
+
+plugin.tx_themebootstrap {
+ 	_LOCAL_LANG {
+ 		default {
+ 			someUnusedKey = foo
+ 			languageMenu_label = foo
+ 		}
+ 	}
+ }

@@ -1,0 +1,37 @@
+#############################################
+# Menu Main
+#############################################
+lib.menu.main = COA
+lib.menu.main{
+  wrap = <ul class="nav navbar-nav pull-right">|</ul>
+  10 = CONTENT
+  10{
+    wrap =|
+    table = tt_content
+    select{
+      pidInList.current = 1
+      orderBy = sorting
+      where = colPos = 0
+      andWhere = sectionIndex = 1 and deleted=0 and hidden=0
+      #andWhere = deleted=0
+      #andWhere = hidden=0
+      #andWhere = header_layout=0
+    }
+    # FELD HEADER auslesen
+    renderObj = COA
+    renderObj {
+      wrap = <li>|</li>
+      10= TEXT
+      10{
+        field = header
+ 	    typolink {
+ 	    #parameter = {footermenu1pid}
+ 	    parameter.current = 1
+ 	    #ATagParams =  class="xtrig" rel="coda-slider-1"
+ 	    #parameter.dataWrap=|#{cObj:parentRecordNumber}
+ 	    parameter.dataWrap = |#c{field:uid}
+        }
+      }
+    }
+  }
+}

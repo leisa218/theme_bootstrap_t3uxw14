@@ -1,0 +1,10 @@
+lib.header.logo.main = COA
+lib.header.logo.main{
+    10 = TEXT
+    10.value = Prestige
+    10.typolink{
+        parameter = #intro
+        ATagParams = class="navbar-brand scroll"
+    }
+
+}
