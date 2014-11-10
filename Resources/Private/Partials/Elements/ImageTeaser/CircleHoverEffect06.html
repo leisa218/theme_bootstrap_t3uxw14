@@ -1,0 +1,36 @@
+{namespace vhs=FluidTYPO3\Vhs\ViewHelpers}
+
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+	<f:section name="Default">
+		<!-- theme_bootstrap: Partials/Elements/ImageTeaser/CircleHoverEffect06.html [begin] -->
+
+		<!-- Erste Bild-URL auslesen -->
+		<f:for each="{vhs:iterator.explode(content: images, glue: ',')}" as="image" iteration="imageIteration">
+			<f:if condition="{imageIteration.isFirst}">
+
+				<div class="ch-item" style="background-image: url('{f:uri.image(src: image, treatIdAsReference: 1, maxWidth: data.imagewidth, maxHeight: data.imageheight)}');width: {data.imagewidth}px; height: {data.imageheight}px">
+					<div class="ch-info-wrap" style="width: {vhs:math.subtract(a: data.imagewidth, fail: 1, b: 40)}px; height: {vhs:math.subtract(a: data.imageheight, fail: 1, b: 40)}px">
+						<div class="ch-info">
+							<div class="ch-info-front" style="background-image: url('{f:uri.image(src: image, treatIdAsReference: 1, maxWidth: data.imagewidth, maxHeight: data.imageheight)}')"></div>
+							<div class="ch-info-back">
+								<h3>{data.header}</h3>
+								<f:format.html>{data.bodytext}</f:format.html>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</f:if>
+		</f:for>
+		<!-- /Erste Bild-URL auslesen -->
+
+		<!-- theme_bootstrap: Partials/Elements/ImageTeaser/CircleHoverEffect06.html [end] -->
+	</f:section>
+	<f:section name="Special">
+		<!-- theme_bootstrap: Partials/Elements/TopLink.html, section: Special [begin] -->
+
+
+		<!-- theme_bootstrap: Partials/Elements/TopLink.html, section: Special [end] -->
+	</f:section>
+</div>

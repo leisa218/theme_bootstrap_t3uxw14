@@ -1,0 +1,27 @@
+
+lib.cssBehaviourMap {
+	behaviour-container = container
+
+	#behaviour-parallax-01 = parallax-01 parallax
+	#behaviour-parallax-02 = parallax-02 parallax
+	#behaviour-parallax-03 = parallax-03 parallax
+	#behaviour-parallax-04 = parallax-04 parallax
+	#behaviour-parallax-05 = parallax-05 parallax
+	#behaviour-parallax-06 = parallax-06 parallax
+
+	behaviour-imageTeaser-circleHoverEffect01 = circle-hover-effect-01
+	behaviour-imageTeaser-circleHoverEffect02 = circle-hover-effect-02
+	behaviour-imageTeaser-circleHoverEffect03 = circle-hover-effect-03
+	behaviour-imageTeaser-circleHoverEffect04 = circle-hover-effect-04
+	behaviour-imageTeaser-circleHoverEffect05 = circle-hover-effect-05
+	behaviour-imageTeaser-circleHoverEffect06 = circle-hover-effect-06
+	behaviour-imageTeaser-circleHoverEffect07 = circle-hover-effect-07
+	behaviour-imageTeaser-circleHoverEffect07-light = circle-hover-effect-07-light
+
+	#behaviour-imageTeaserExtended-columnHoverEffect01 = column-hover-effect-01
+	
+	behaviour-table-responsive = table-responsive
+	#behaviour-product-box = product-box
+	
+	#behaviour-carousel-inner = carousel-inner
+}

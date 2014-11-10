@@ -1,0 +1,25 @@
+tt_content.imageTeaser = COA
+tt_content.imageTeaser {
+	10 = FLUIDTEMPLATE
+	10 {
+		file = {$themes.resourcesPrivatePath}Templates/Elements/ImageTeaser.html
+		partialRootPath = {$themes.resourcesPrivatePath}Partials/
+		layoutRootPath = {$themes.resourcesPrivatePath}Layouts/
+
+		variables {
+			images < tt_content.image.20.imgList.cObject
+			#images.split {
+			#	token = ,
+			#	cObjNum = 1
+			#}
+			#image = FILES
+			#image {
+			#	references {
+			#		table = tt_content
+			#		uid.data = current
+			#		fieldName = image
+			#	}
+			#}
+		}
+	}
+}

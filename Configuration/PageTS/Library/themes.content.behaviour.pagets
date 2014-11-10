@@ -1,0 +1,40 @@
+themes {
+	content {
+		# Behaviour for content elements
+		behaviour {
+			default {
+				container = Container
+			#	parallax-01 = parallax-01 - ESC
+			#	parallax-02 = parallax-02 - Team
+			#	parallax-03 = parallax-03 - Büro(Historie)
+			#	parallax-04 = parallax-04 - Headset
+			#	parallax-05 = parallax-05 - Arbeitsplatz
+			#	parallax-06 = parallax-06 - Dunkler Gang
+			}
+			table {
+				table-responsive = Responsive Table
+			}
+			#html {
+			#	product-box = Produkt-Box
+			#}
+			imageTeaser {
+				imageTeaser-circleHoverEffect01 = Circle hover effect 1
+				imageTeaser-circleHoverEffect02 = Circle hover effect 2
+				imageTeaser-circleHoverEffect03 = Circle hover effect 3
+				imageTeaser-circleHoverEffect04 = Circle hover effect 4
+				imageTeaser-circleHoverEffect05 = Circle hover effect 5
+				imageTeaser-circleHoverEffect06 = Circle hover effect 6
+				imageTeaser-circleHoverEffect07 = Circle hover effect 7
+				imageTeaser-circleHoverEffect07-light = Circle hover effect 7 (helles Design)
+			}
+			#imageTeaserExtended {
+			#	imageTeaserExtended-columnHoverEffect01 = Column hover effect 1
+			#}
+			#gridelements_pi1 {
+			#	# TEMP carousel fix
+			#	carousel-inner = carousel-inner
+			#}
+		}
+		
+	}
+}

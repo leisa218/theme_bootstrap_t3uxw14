@@ -1,0 +1,37 @@
+{namespace vhs=FluidTYPO3\Vhs\ViewHelpers}
+
+<f:for each="{vhs:iterator.explode(content: data.tx_themes_behaviour, glue: ',')}" as="behaviour" iteration="behaviourIteration">
+	
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect01' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect01" section="Default" arguments="{_all}" />
+	</f:if>
+
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect02' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect02" section="Default" arguments="{_all}" />
+	</f:if>
+	
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect03' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect03" section="Default" arguments="{_all}" />
+	</f:if>
+	
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect04' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect04" section="Default" arguments="{_all}" />
+	</f:if>
+	
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect05' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect05" section="Default" arguments="{_all}" />
+	</f:if>
+	
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect06' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect06" section="Default" arguments="{_all}" />
+	</f:if>
+	
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect07' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect07" section="Default" arguments="{_all}" />
+	</f:if>
+
+	<f:if condition="{behaviour} == 'behaviour-imageTeaser-circleHoverEffect07-light' ">
+		<f:render partial="Elements/ImageTeaser/CircleHoverEffect07" section="Default" arguments="{_all}" />
+	</f:if>
+	
+</f:for>
